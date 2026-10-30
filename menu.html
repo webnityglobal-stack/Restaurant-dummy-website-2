@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Sushi Zen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="logo">SUSHI <span>ZEN.</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="cart.html" class="cart-link">
+                <span>Cart</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- MENU HERO -->
+      
+
+        <!-- MENU PRODUCTS -->
+        <section class="section full-menu-section">
+
+            <div class="menu-topbar">
+                <div>
+                    <p class="eyebrow">MADE FRESH FOR YOU</p>
+                    <h2>Explore Our <span>Food Collection</span></h2>
+                </div>
+
+                <div class="menu-search">
+                    <input
+                        type="search"
+                        id="menuSearch"
+                        placeholder="Search your favourite food..."
+                        aria-label="Search menu items">
+                    <span>⌕</span>
+                </div>
+            </div>
+
+            <!-- CATEGORY FILTERS -->
+            <div class="product-filters menu-page-filters">
+                <button class="filter-btn active" data-category="All">All Items</button>
+                <button class="filter-btn" data-category="Sushi Rolls">Sushi Rolls</button>
+                <button class="filter-btn" data-category="Nigiri">Nigiri</button>
+                <button class="filter-btn" data-category="Ramen">Ramen</button>
+                <button class="filter-btn" data-category="Starters">Starters</button>
+                <button class="filter-btn" data-category="Desserts">Desserts</button>
+            </div>
+
+            <div class="menu-result-info">
+                <p id="menuResultCount">Our delicious collection</p>
+                <a href="cart.html">View Cart →</a>
+            </div>
+
+            <!-- PRODUCTS WILL LOAD HERE -->
+            <div class="product-grid" id="menuProducts">
+                <!-- JavaScript loads all products -->
+            </div>
+
+        </section>
+
+        <!-- ORDER CTA -->
+        <section class="contact-section">
+            <p class="eyebrow">FRESHLY PREPARED, JUST FOR YOU</p>
+            <h2>Your Japanese Food Journey Starts Here.</h2>
+            <p>Choose your favourites and enjoy a delicious meal.</p>
+            <a href="cart.html" class="btn btn-red">Go to Cart →</a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="index.html" class="logo">SUSHI <span>ZEN.</span></a>
+        <p>Authentic Japanese flavours, crafted with passion.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © <span id="year"></span> Sushi Zen. All rights reserved.
+        </p>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

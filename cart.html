@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Sushi Zen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">SUSHI <span>ZEN</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="cart.html" class="cart-link active">
+                Cart <span id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="cart-page">
+        <div class="cart-heading">
+            <p class="section-subtitle">YOUR SELECTION</p>
+            <h1>Your <span>Cart</span></h1>
+            <p>Review your favourite Japanese dishes before checkout.</p>
+        </div>
+
+        <div class="cart-layout">
+            <section class="cart-items-section">
+                <div class="cart-section-heading">
+                    <h2>Shopping Cart</h2>
+                    <a href="menu.html">Continue Shopping</a>
+                </div>
+
+                <div id="cartItems" class="cart-items">
+                    <!-- Cart products will render here -->
+                </div>
+            </section>
+
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+
+                <div class="summary-line">
+                    <span>Items</span>
+                    <span id="summaryItems">0</span>
+                </div>
+
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">₹0</span>
+                </div>
+
+                <div class="summary-line">
+                    <span>Delivery</span>
+                    <span class="free-delivery">FREE</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">₹0</span>
+                </div>
+
+                <a href="checkout.html" class="checkout-btn" id="checkoutBtn">
+                    PROCEED TO CHECKOUT <span>→</span>
+                </a>
+
+                <p class="secure-note">Secure checkout · Freshly prepared</p>
+            </aside>
+        </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> SUSHI ZEN. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
